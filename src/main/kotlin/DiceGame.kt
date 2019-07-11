@@ -14,9 +14,9 @@ class DiceGame(private val player: Player) {
         val total = value1 + value2
         println("Total value: $total")
         if (total > 7) {
-            println("You won!")
+            println("${player.name} won!")
         } else {
-            println("You lose.")
+            println("${player.name} lose.")
         }
     }
 }
