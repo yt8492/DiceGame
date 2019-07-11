@@ -12,5 +12,10 @@ class DiceGame {
         println("Die 2: $value2")
         val total = value1 + value2
         println("Total value: $total")
+        if (total > 7) {
+            println("You won!")
+        } else {
+            println("You lose.")
+        }
     }
 }
