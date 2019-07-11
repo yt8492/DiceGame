@@ -1,8 +1,9 @@
-class DiceGame {
-    val dice1 = Die()
-    val dice2 = Die()
+class DiceGame(private val player: Player) {
+    private val dice1 = Die()
+    private val dice2 = Die()
 
     fun play() {
+        println("Hello, ${player.name}!")
         println("Rolling the dice...")
         dice1.roll()
         dice2.roll()
